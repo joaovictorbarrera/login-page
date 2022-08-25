@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous" defer></script>
+    
+    <title>Main Page</title>
+</head>
+<body class="bg-white">
+    <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
+        <div class="navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+            </ul>
+
+            <form action="/delete-account?_method=DELETE" method="post">
+                <button type="submit" class="btn btn-danger my-2 my-sm-0 mx-3">Delete Account</button>
+            </form>
+
+            <form action="/logout" method="POST">
+                <button type="submit" class="btn btn-danger my-2 my-sm-0">Log Out</button>
+            </form>
+
+            <!-- <a href="/delete-account?_method=DELETE"></a>  -->
+            <!-- <a href="/logout?_method=POST"></a>  -->
+        </div>
+    </nav>
+    <div id="mainpage-wrapper" class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div id="mainpage-board" class="container bg-white p-4 rounded text-center lighter-border border-md" style="max-width: 1200px;">
+            <h1 class="lead my-5 display-4"><strong><%= locals.message %></strong></h1>
+        
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label for="favoritePerson" class="sr-only">Update favorite person</label>
+                    <input class="form-control form-control-lg my-4" type="text" name="favoritePerson" placeholder="Update your favorite person">
+                    <button type="submit" class="btn btn-primary w-50 py-2">Update</button>
+                </div>
+            </form>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
