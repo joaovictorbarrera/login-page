@@ -54,5 +54,5 @@
     app.use("/", indexRouter)
     app.use("/", authRouter)
     
-    app.listen(PORT, "localhost")
+    app.listen(PORT)
 })()
