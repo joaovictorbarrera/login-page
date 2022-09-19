@@ -19,6 +19,7 @@
     
     // app startup
     const app = express()
+    const PORT = process.env.PORT || 5000
     console.log("express app started")
 
     // import middleswares
@@ -53,5 +54,5 @@
     app.use("/", indexRouter)
     app.use("/", authRouter)
     
-    app.listen(5000, "localhost")
+    app.listen(PORT, "localhost")
 })()
