@@ -2,6 +2,8 @@
 
 ### Sample login page created using Express.js, Session-based Auth, MongoDB, and Bootstrap 4.
 - Uses Session ID and Cookies for authentication.
+- Client and Server Validation.
+- Strong Password Enforcement.
 
 ### Login
 ![Login Page](https://i.imgur.com/UOdfTJg.png)
