@@ -13,4 +13,7 @@
 ![Register Page](https://i.imgur.com/raeSMCa.png)
 
 ### User Information
-![Main Page, Favorite Person](https://i.imgur.com/fNoAiQY.png)
+![Main Page, Favorite Person](https://i.imgur.com/gXtEHuC.png)
+
+### Error Messages
+![Error Message](https://i.imgur.com/6SSkhRy.png)
